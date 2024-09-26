@@ -1,0 +1,54 @@
+/*estilo geral*/
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    background-image: url('image.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área do body */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+h1{
+    padding-top: 50px;
+    font-weight: bold;
+    color: #865f72;
+    text-shadow: 4px 4px 5px #2d2227;
+}
+
+/*container principal*/
+#quiz-container {
+
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: auto;
+    max-width: 600px;
+    margin: auto;
+    padding: 5px;
+}
+
+/*perguntas e botões*/
+
+#question {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
