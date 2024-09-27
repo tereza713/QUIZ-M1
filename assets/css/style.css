@@ -1,4 +1,6 @@
 /*estilo geral*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 body {
     height: 100vh;
     display: flex;
@@ -6,22 +8,25 @@ body {
     justify-content: center;
     flex-direction: column;
     gap: 5px;
-    background-image: url('image.png'); /* Substitua pelo caminho da sua imagem */
+    background-image: url(../images/image.png); /* Substitua pelo caminho da sua imagem */
     background-size: cover; /* Faz a imagem cobrir toda a área do body */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
 }
 
 h1{
+    font-size: 2.5em;
     padding-top: 50px;
+    font-family:Josefin Sans;
     font-weight: bold;
-    color: #865f72;
+    color: #0a1331;
     text-shadow: 4px 4px 5px #2d2227;
 }
 
 /*container principal*/
 #quiz-container {
-
+    font-size: 1.4em;
+    font-family:Josefin Sans;
     text-align: center;
     background-color: white;
     border-radius: 10px;
@@ -36,7 +41,7 @@ h1{
 /*perguntas e botões*/
 
 #question {
-    font-size: 14px;
+    font-size: 0.8em;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -54,7 +59,7 @@ li {
 }
 button {
     padding: 10px 20px;
-    font-size: 10px;
+    font-size: 0.6em;
     background-color: #865f72;
     color: white;
     border: none;
