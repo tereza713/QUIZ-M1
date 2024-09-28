@@ -105,10 +105,18 @@ function endQuiz() {
     restartButton.style.display = 'block'; // Mostra o botão de reinício
 }
 
+function restartGame() {
+    score = 0; // Reinicia a pontuação
+    currentQuestion = 0; // Reinicia a fase
+    feedbackElement.textContent = ''; // Limpa o feedback
+    restartButton.style.display = 'none'; // Esconde o botão de reinício
+    loadQuestion(); // Carrega a primeira pergunta
+} 
+
 // Função para reiniciar o quiz
 restartButton.addEventListener('click', () => {
     document.querySelector('ul').style.display = 'flex'; // Exibe os botões novamente
-    startGame(); // Reinicia o jogo
+    restartGame(); // Reinicia o jogo
 });
 
 // Iniciar o quiz quando a página carregar
