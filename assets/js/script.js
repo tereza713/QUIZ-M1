@@ -55,6 +55,7 @@ function loadQuestion() {
     });
 }
 
+
 // Função para verificar a resposta
 function checkAnswer(selectedIndex) {
     const current = questions[currentQuestion];
@@ -62,12 +63,23 @@ function checkAnswer(selectedIndex) {
     // Verificar se a resposta é correta
     if (selectedIndex === current.correctAnswer) {
         score++;
+        answerButtons[current.correctAnswer].style.background = 'green';
+        setTimeout( function(){
+            answerButtons[current.correctAnswer].style.background = '';
+        
+        }, 1000); 
+    
         feedbackElement.textContent = "Correto!"; // Feedback positivo
         feedbackElement.style.color = "green"; // Mudar cor do feedback
         nextQuestion(); // Avançar para a próxima pergunta
     } else {
+        answerButtons[selectedIndex].style.background = 'red';
+        setTimeout( function(){
+            answerButtons[selectedIndex].style.background = '';
+            endQuiz();
+        }, 1000); 
         feedbackElement.textContent = `Errado! ${playerName}, você perdeu!`;
-        endQuiz(); // Termina o quiz se a resposta estiver errada
+        
     }
 }
 
