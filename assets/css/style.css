@@ -75,7 +75,7 @@ button:hover {
 #feedback {
     margin-top: 20px;
     font-size: 15px;
-    color: rgb(255, 0, 149);
+    color: rgb(251, 7, 19);
 }
 
 /* Nome do jogador e fase */
@@ -93,7 +93,7 @@ button:hover {
 #restart-btn {
     padding: 10px 20px;
     font-size: 15px;
-    background-color: #4eb423;
+    background-color: #0707f7;
     color: white;
     border: none;
     border-radius: 50px;
@@ -101,5 +101,5 @@ button:hover {
 }
 
 #restart-btn:hover {
-    background-color: #e535b9;
+    background-color: #35ade5;
 }

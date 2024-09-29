@@ -33,6 +33,9 @@ const restartButton = document.getElementById('restart-btn');
 // Iniciar o jogo pedindo o nome do jogador
 function startGame() {
     playerName = prompt("Digite o seu nome:"); // Captura o nome via prompt
+    while(playerName == '' || playerName == null){
+        playerName = prompt("Nome invalido, por favor digite seu nome novamente:");
+    }
     playerNameElement.textContent = `Jogador: ${playerName}`; // Exibe o nome
     score = 0; // Reinicia a pontuação
     currentQuestion = 0; // Reinicia a fase
