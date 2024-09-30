@@ -19,7 +19,7 @@ h1{
     padding-top: 50px;
     font-family:Josefin Sans;
     font-weight: bold;
-    color: #0a1331;
+    color: #fff;
     text-shadow: 4px 4px 5px #2d2227;
 }
 
@@ -59,8 +59,8 @@ li {
 }
 button {
     padding: 10px 20px;
-    font-size: 0.6em;
-    background-color: #865f72;
+    font-size: 15px;
+    background-color: #7b3b90;
     color: white;
     border: none;
     border-radius: 5px;
@@ -68,7 +68,7 @@ button {
 }
 
 button:hover {
-    background-color: #a93ecd;
+    background-color: #5c2a6d;
 }
 
 /* Feedback */
@@ -84,8 +84,8 @@ button:hover {
 }
 
 #quiz-phase {
-    font-size: 15px;
-    color: #7e7735;
+    font-size: 20px;
+    color: #5c2a6d;
     font-weight: bold;
 }
 
