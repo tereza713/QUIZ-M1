@@ -12,8 +12,43 @@ const questions = [
     },
     {
         question: "Qual deusa transformou Medusa em um monstro?",
-        answers: ["Afrodite", "Atena", "Hera", "Ártemis"],
+        answers:  ["Afrodite", "Atena", "Hera", "Ártemis"],
         correctAnswer: 1 // Atena é a resposta correta (índice 1)
+    },
+    { 
+        question: "Quem é o rei dos deuses na mitologia grega?",
+        answers: ["Hades","Apolo", "Poseidon", "Zeus"],
+        correctAnswer: 3 // zeus é a resposta correta (índice 1)
+    },
+    { 
+        question: "Qual arma é símbolo do poder de Zeus e produz os raios?",
+        answers: [" A espada sagrada", "O tridente", "O raio-mestre", "O elmo das trevas "],
+        correctAnswer: 2 // raio mestre é a resposta correta (índice 2)
+    },
+    { 
+        question: "Quem é a deusa do amor e da beleza?",
+        answers: ["Deméter", "Afrodite", "Hera", "Atena "],
+        correctAnswer: 1 // afrodite é a resposta correta (índice 2)
+    },
+    { 
+        question: "Qual é o deus do mar na mitologia grega?",
+        answers: [" Hermes", "Ares", "Poseidon", "Dionísio"],
+        correctAnswer: 2 // Poseidon é a resposta correta (índice 2)
+    },
+    { 
+        question: "Quem é a deusa da sabedoria e da guerra estratégica?",
+        answers: [" Afrodite", "Ártemis ", " Atena", "Hera"],
+        correctAnswer: 3// hera é a resposta correta (índice 2)
+    },
+    { 
+        question: "Qual é o nome da esposa de Zeus?",
+        answers: ["Atena", " Hera", "Afrodite", " Deméter"],
+        correctAnswer: 1 // Hera é a resposta correta (índice 2)
+    },
+    { 
+        question: "Qual é o nome do herói que realizou os doze trabalhos?",
+        answers: [" Perseu", "Aquiles", "Hércules", "Teseu"],
+        correctAnswer: 2 // Hércules é a resposta correta (índice 2)
     }
 ];
 
