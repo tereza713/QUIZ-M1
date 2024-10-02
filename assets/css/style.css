@@ -108,3 +108,21 @@ button:hover {
 #quizMusic{
     display: none;
 }
+
+/*responsividade*/
+@media (max-width: 480px){
+ul{
+    display: flex;
+    flex-direction: column;
+    }
+button{
+    padding: 16px;
+    font-size: auto;
+    height: auto;
+    width: 80%;
+}
+h1{
+    font-size:1.9em;  
+    margin-top: 50px;
+}
+}

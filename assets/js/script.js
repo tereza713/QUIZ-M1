@@ -16,9 +16,9 @@ const questions = [
         correctAnswer: 1 // Atena é a resposta correta (índice 1)
     },
     { 
-        question: "Quem é o rei dos deuses na mitologia grega?",
-        answers: ["Hades","Apolo", "Poseidon", "Zeus"],
-        correctAnswer: 3 // zeus é a resposta correta (índice 1)
+        question: "Onde viviam os principais deuses do panteão grego?",
+        answers: ["No Monte Parnaso","No Hades", "Na Ilha de Creta", "No Monte Olimpo"],
+        correctAnswer: 3 // No monte olimpo, Hades, e Poseidon (índice 3)
     },
     { 
         question: "Qual arma é símbolo do poder de Zeus e produz os raios?",
@@ -31,9 +31,9 @@ const questions = [
         correctAnswer: 1 // afrodite é a resposta correta (índice 2)
     },
     { 
-        question: "Qual é o deus do mar na mitologia grega?",
-        answers: [" Hermes", "Ares", "Poseidon", "Dionísio"],
-        correctAnswer: 2 // Poseidon é a resposta correta (índice 2)
+        question: "Que herói derrotou o Minotauro?",
+        answers: ["Teseu", "Perseu", "Aquiles", "Jasão"],
+        correctAnswer: 0 // Teseu é a resposta correta (índice 0)
     },
     { 
         question: "Quem é a deusa da sabedoria e da guerra estratégica?",
