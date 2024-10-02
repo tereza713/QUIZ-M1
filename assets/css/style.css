@@ -95,7 +95,7 @@ button:hover {
 #restart-btn {
     padding: 10px 20px;
     font-size: 15px;
-    background-color: #0707f7;
+    background-color: #460d57;
     color: white;
     border: none;
     border-radius: 50px;
@@ -103,7 +103,7 @@ button:hover {
 }
 
 #restart-btn:hover {
-    background-color: #35ade5;
+    background-color: #8413e0;
 }
 #quizMusic{
     display: none;
