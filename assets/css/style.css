@@ -8,15 +8,16 @@ body {
     justify-content: center;
     flex-direction: column;
     gap: 5px;
-    background-image: url(../images/image.png); /* Substitua pelo caminho da sua imagem */
+    background-image: url(../images/fundo.jpeg); /* Substitua pelo caminho da sua imagem */
     background-size: cover; /* Faz a imagem cobrir toda a área do body */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
 }
 
 h1{
+    border: double 5px rgb(54, 3, 54);
     font-size: 2.5em;
-    padding-top: 50px;
+    padding: 18px;
     font-family:Josefin Sans;
     font-weight: bold;
     color: #fff;
@@ -25,6 +26,7 @@ h1{
 
 /*container principal*/
 #quiz-container {
+    border: 10px double rgb(54, 3, 54);
     font-size: 1.4em;
     font-family:Josefin Sans;
     text-align: center;

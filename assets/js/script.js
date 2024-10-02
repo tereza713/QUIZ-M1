@@ -38,7 +38,7 @@ const questions = [
     { 
         question: "Quem é a deusa da sabedoria e da guerra estratégica?",
         answers: [" Afrodite", "Ártemis ", " Atena", "Hera"],
-        correctAnswer: 3// hera é a resposta correta (índice 2)
+        correctAnswer: 2// hera é a resposta correta (índice 2)
     },
     { 
         question: "Qual é o nome da esposa de Zeus?",
@@ -111,16 +111,17 @@ function checkAnswer(selectedIndex) {
             answerButtons[current.correctAnswer].style.background = '';
         
         }, 1000); 
-    
-        feedbackElement.textContent = "Correto!"; // Feedback positivo
-        feedbackElement.style.color = "green"; // Mudar cor do feedback
+        feedbackElement.style.color = '';
         nextQuestion(); // Avançar para a próxima pergunta
     } else {
+
+        
         answerButtons[selectedIndex].style.background = 'red';
         setTimeout( function(){
             answerButtons[selectedIndex].style.background = '';
             endQuiz();
         }, 1000); 
+        feedbackElement.style.color = 'red';
         feedbackElement.textContent = `Errado! ${playerName}, você perdeu!`;
         quizMusic.pause();
         quizMusic.currentTime = 0;
