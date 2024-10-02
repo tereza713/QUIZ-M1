@@ -52,6 +52,9 @@ const questions = [
     }
 ];
 
+
+
+
 // Variáveis de controle
 let playerName = ''; // Nome do jogador
 let currentQuestion = 0; // Acompanhar a fase atual
@@ -64,6 +67,7 @@ const feedbackElement = document.getElementById('feedback');
 const playerNameElement = document.getElementById('player-name');
 const quizPhaseElement = document.getElementById('quiz-phase');
 const restartButton = document.getElementById('restart-btn');
+const quizMusic = document.getElementById('quiz-music');
 
 // Iniciar o jogo pedindo o nome do jogador
 function startGame() {
@@ -76,6 +80,7 @@ function startGame() {
     currentQuestion = 0; // Reinicia a fase
     feedbackElement.textContent = ''; // Limpa o feedback
     restartButton.style.display = 'none'; // Esconde o botão de reinício
+    quizMusic.play();
     loadQuestion(); // Carrega a primeira pergunta
 }
 // Função para carregar a pergunta atual
@@ -117,6 +122,8 @@ function checkAnswer(selectedIndex) {
             endQuiz();
         }, 1000); 
         feedbackElement.textContent = `Errado! ${playerName}, você perdeu!`;
+        quizMusic.pause();
+        quizMusic.currentTime = 0;
         
     }
 }
@@ -140,6 +147,7 @@ function nextQuestion() {
 function endQuiz() {
     questionElement.textContent = `${playerName}, você acertou ${score} de ${questions.length} perguntas.`;
     document.querySelector('ul').style.display = 'none'; // Esconde os botões
+    quizMusic.pause();
     restartButton.style.display = 'block'; // Mostra o botão de reinício
 }
 
@@ -148,6 +156,7 @@ function restartGame() {
     currentQuestion = 0; // Reinicia a fase
     feedbackElement.textContent = ''; // Limpa o feedback
     restartButton.style.display = 'none'; // Esconde o botão de reinício
+    quizMusic.play();
     loadQuestion(); // Carrega a primeira pergunta
 } 
 

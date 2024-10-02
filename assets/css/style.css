@@ -103,3 +103,6 @@ button:hover {
 #restart-btn:hover {
     background-color: #35ade5;
 }
+#quizMusic{
+    display: none;
+}
